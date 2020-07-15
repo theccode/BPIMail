@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-gray: #f1f1f1;
+    --background-white: #fff;
+    --color-red: #c31a62;
+    --color-yellow: #FEDD82;
+    --text-logo: 24px;
+    --margin-s:4px;
+    --margin-m: 8px;
+    --margin-l: 12px;
+    --margin-logo: 30px;
+}
+
+html{
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    min-width: 1024px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content {
+    display: flex;
+}
+
+.inbox__table-row--viewed {
+  background: var(--background-gray);
+}
+
+.inbox__table-cell,
+.inbox__table-cell--bold {
+  max-width: 200px;
+  white-space: nowrap;
+}
+
+.inbox__table-cell--bold {
+  font-weight: bold !important;
+}
+
+.inbox__star {
+  color: var(--color-yellow);
+}
+
+.inbox__link {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.header{
+    padding: var(--margin-m);
+    height: 60px;
+    background: var(--background-gray);
+    align-items: center;
+    display: flex;
+}
+
+.header__logo {
+    width: 200px;
+    font-size: var(--text-logo);
+    flex: 0 0 auto;
+    font-weight: bold;
+    padding: 0 30px;
+}
+
+.header__search-form{
+    flex: 1 1 auto;
+}
+
+.header__search-field{
+    padding: var(--margin-s);
+    background: transparent;
+    margin-right: var(--margin-m);
+    height: 30px;
+    max-width: 400px;
+}
+
+.header__search-field:focus-within{
+    background: var(--background-white)
+}
+
+.navigation-bar{
+    max-width: 160px;
+    padding: 0 var(--margin-logo);
+}
+
+.navigation-bar__compose-button{
+    margin-top: var(--margin-l) !important;
+}
+
+.navigation-bar__nav{
+    margin-top: var(--margin-l);
+}
+
+.navigation-bar__ul{
+    list-style-type: none;
+}
+
+.navigation-bar__li:first-child{
+    margin: 0 0 var(--margin-s);
+}
+
+.navigation-bar__li, .navigation-bar__li--selected {
+    margin:  var(--margin-s) 0;
+}
+
+.navigation-bar__li--selected{
+    color: var(--color-red);
+    font-weight: bold;
+}
+
+.navigation-bar__li--number{
+    font-weight: bold;
+}
+
+.compose-email__message{
+    margin-top: calc(var(--margin-l ) * 4) !important;
+}
+
+.compose-email__text-field{
+    margin: var(--margin-s) !important;
+    display: block !important;
+    max-width: 200px;
+}

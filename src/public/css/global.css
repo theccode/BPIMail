@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-gray: #f1f1f1;
+    --background-white: #fff;
+    --color-red: #c31a62;
+    --color-yellow: #FEDD82;
+    --text-logo: 24px;
+    --margin-s:4px;
+    --margin-m: 8px;
+    --margin-l: 12px;
+    --margin-logo: 30px;
+}
+
+html{
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    min-width: 1024px;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}

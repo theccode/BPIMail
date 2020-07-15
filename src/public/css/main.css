@@ -1,0 +1,6 @@
+@import './global.css';
+@import'../js/components/app/app.css';
+@import'../js/components/inbox/inbox.css';
+@import '../js/components/header/header_styles.css';
+@import '../js/components/navigationBar/navigation_bar.css';
+@import '../js/components/navigationBar/compose_email/compose_email.css';
